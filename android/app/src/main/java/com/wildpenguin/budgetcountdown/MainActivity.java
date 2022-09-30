@@ -1,4 +1,4 @@
-package com.budgetcountdown;
+package com.wildpenguin.budgetcountdown;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
