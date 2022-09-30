@@ -84,7 +84,8 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
  */
 
 project.ext.react = [
-    enableHermes: true,  // clean and rebuild if changing
+    enableHermes: false,  // clean and rebuild if changing
+//    hermesCommand: '../../node_modules/react-native/sdks/hermesc/%OS-BIN%/hermesc',
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -140,11 +141,11 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.budgetcountdown"
+        applicationId "com.wildpenguin.budgetcountdown"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
 
         if (isNewArchitectureEnabled()) {

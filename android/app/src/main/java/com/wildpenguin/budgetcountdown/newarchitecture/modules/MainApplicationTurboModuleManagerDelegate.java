@@ -1,4 +1,4 @@
-package com.budgetcountdown.newarchitecture.modules;
+package com.wildpenguin.budgetcountdown.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
